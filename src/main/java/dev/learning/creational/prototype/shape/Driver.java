@@ -13,5 +13,13 @@ public class Driver {
 
         // Draw the newly created red circle.
         redCircle.draw();
+
+        System.out.println("------------------------------------------------");
+
+        Shape squarePrototype = new Square("blue");
+
+        ShapeClient squareClient = new ShapeClient(squarePrototype);
+
+        Shape blueSquare = squareClient.createShape();
     }
 }
